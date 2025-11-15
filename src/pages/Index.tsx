@@ -5,11 +5,15 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import StarfieldBackground from "@/components/StarfieldBackground";
+import MorningBackground from "@/components/MorningBackground";
+import { useTheme } from "@/components/ThemeProvider";
 
 const Index = () => {
+  const { theme } = useTheme();
+
   return (
     <div className="min-h-screen relative">
-      <StarfieldBackground />
+      {theme === "dark" ? <StarfieldBackground /> : <MorningBackground />}
       <Navigation />
       <Hero />
       <About />
