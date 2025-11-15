@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Github, Linkedin, Twitter, Download } from "lucide-react";
 
 const Contact = () => {
   const socialLinks = [
@@ -8,6 +8,15 @@ const Contact = () => {
     { icon: Linkedin, label: "LinkedIn", href: "#" },
     { icon: Twitter, label: "Twitter", href: "#" },
   ];
+
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/Jigar_Shah_Resume.pdf';
+    link.download = 'Jigar_Shah_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <section id="contact" className="py-20 px-6">
@@ -45,13 +54,24 @@ const Contact = () => {
               ))}
             </div>
 
-            <Button 
-              size="lg"
-              className="mt-6 bg-primary hover:bg-primary/90 text-primary-foreground glow"
-              onClick={() => window.location.href = 'mailto:jigar@example.com'}
-            >
-              Send Message
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 mt-6 w-full sm:w-auto">
+              <Button 
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground glow flex-1 sm:flex-initial"
+                onClick={() => window.location.href = 'mailto:jigar@example.com'}
+              >
+                Send Message
+              </Button>
+              <Button 
+                size="lg"
+                variant="outline"
+                className="border-primary text-foreground hover:bg-primary/10 flex-1 sm:flex-initial group"
+                onClick={handleDownloadResume}
+              >
+                <Download className="w-4 h-4 mr-2 group-hover:animate-bounce" />
+                Download Resume
+              </Button>
+            </div>
           </div>
         </Card>
 

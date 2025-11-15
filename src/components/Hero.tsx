@@ -1,8 +1,17 @@
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/jigar-portrait.jpg";
 
 const Hero = () => {
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/Jigar_Shah_Resume.pdf';
+    link.download = 'Jigar_Shah_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden">
       {/* Animated background elements */}
@@ -22,7 +31,7 @@ const Hero = () => {
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
             Crafting elegant solutions to complex problems. Passionate about building scalable applications and exploring cutting-edge technologies.
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground glow"
@@ -37,6 +46,15 @@ const Hero = () => {
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Get in Touch
+            </Button>
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="border-border hover:border-primary hover:bg-primary/10 group"
+              onClick={handleDownloadResume}
+            >
+              <Download className="w-4 h-4 mr-2 group-hover:animate-bounce" />
+              Download Resume
             </Button>
           </div>
         </div>
