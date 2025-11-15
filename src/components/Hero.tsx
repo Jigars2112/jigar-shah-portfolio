@@ -1,6 +1,6 @@
 import { ArrowDown, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import profileImage from "@/assets/jigar-portrait.jpg";
+import profileImage from "@/assets/me.jpg";
 
 const Hero = () => {
   const handleDownloadResume = () => {
