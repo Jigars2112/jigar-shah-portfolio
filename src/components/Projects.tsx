@@ -8,19 +8,19 @@ const Projects = () => {
       title: "E-Commerce Platform",
       description: "Full-stack e-commerce solution with real-time inventory management, payment integration, and admin dashboard.",
       tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      gradient: "from-coral-500 to-pink-500"
+      gradient: "from-blue-500 to-cyan-500"
     },
     {
       title: "Task Management App",
       description: "Collaborative project management tool with real-time updates, team collaboration features, and analytics.",
       tech: ["Next.js", "TypeScript", "MongoDB", "Socket.io"],
-      gradient: "from-pink-500 to-fuchsia-500"
+      gradient: "from-cyan-500 to-blue-600"
     },
     {
       title: "AI Content Generator",
       description: "Machine learning powered content creation tool that generates high-quality articles and marketing copy.",
       tech: ["Python", "React", "TensorFlow", "FastAPI"],
-      gradient: "from-fuchsia-500 to-rose-500"
+      gradient: "from-blue-600 to-indigo-600"
     }
   ];
 
