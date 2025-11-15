@@ -95,8 +95,8 @@ const StarfieldBackground = () => {
           this.x - Math.cos(this.angle) * this.length,
           this.y - Math.sin(this.angle) * this.length
         );
-        gradient.addColorStop(0, `rgba(255, 159, 64, ${this.opacity})`);
-        gradient.addColorStop(0.5, `rgba(251, 191, 36, ${this.opacity * 0.5})`);
+        gradient.addColorStop(0, `rgba(255, 105, 135, ${this.opacity})`);
+        gradient.addColorStop(0.5, `rgba(236, 72, 153, ${this.opacity * 0.5})`);
         gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
 
         ctx.strokeStyle = gradient;
@@ -117,8 +117,8 @@ const StarfieldBackground = () => {
 
         // Add glow effect
         ctx.shadowBlur = 10;
-        ctx.shadowColor = `rgba(255, 159, 64, ${this.opacity})`;
-        ctx.fillStyle = `rgba(255, 159, 64, ${this.opacity * 0.8})`;
+        ctx.shadowColor = `rgba(255, 105, 135, ${this.opacity})`;
+        ctx.fillStyle = `rgba(255, 105, 135, ${this.opacity * 0.8})`;
         ctx.beginPath();
         ctx.arc(this.x, this.y, 5, 0, Math.PI * 2);
         ctx.fill();
