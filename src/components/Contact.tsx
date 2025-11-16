@@ -33,10 +33,10 @@ const Contact = () => {
             <div className="flex items-center gap-3 text-lg">
               <Mail className="w-6 h-6 text-primary" />
               <a 
-                href="mailto:jigar@example.com" 
+                href="mailto:jigarshah2112.work@example.com" 
                 className="text-foreground hover:text-primary transition-colors"
               >
-                jigar@example.com
+                jigarshah2112.work@example.com
               </a>
             </div>
 
