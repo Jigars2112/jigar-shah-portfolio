@@ -4,9 +4,9 @@ import { Mail, Github, Linkedin, Twitter, Download } from "lucide-react";
 
 const Contact = () => {
   const socialLinks = [
-    { icon: Github, label: "GitHub", href: "#" },
-    { icon: Linkedin, label: "LinkedIn", href: "#" },
-    { icon: Twitter, label: "Twitter", href: "#" },
+    { icon: Github, label: "GitHub", href: "https://github.com/Jigars2112" },
+    { icon: Linkedin, label: "LinkedIn", href: "www.linkedin.com/in/jigar-shah-full-stack-developer" },
+    // { icon: Twitter, label: "Twitter", href: "#" },
   ];
 
   const handleDownloadResume = () => {
@@ -33,10 +33,10 @@ const Contact = () => {
             <div className="flex items-center gap-3 text-lg">
               <Mail className="w-6 h-6 text-primary" />
               <a 
-                href="mailto:jigarshah2112.work@example.com" 
+                href="mailto:jigarshah2112.work@gmail.com" 
                 className="text-foreground hover:text-primary transition-colors"
               >
-                jigarshah2112.work@example.com
+                jigarshah2112.work@gmail.com
               </a>
             </div>
 
@@ -58,7 +58,7 @@ const Contact = () => {
               <Button 
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground glow flex-1 sm:flex-initial"
-                onClick={() => window.location.href = 'mailto:jigar@example.com'}
+                onClick={() => window.location.href = 'mailto:jigarshah2112.work@gmail.com'}
               >
                 Send Message
               </Button>
