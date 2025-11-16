@@ -5,8 +5,8 @@ import profileImage from "@/assets/me.jpg";
 const Hero = () => {
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/Jigar_Shah_Resume.pdf';
-    link.download = 'Jigar_Shah_Resume.pdf';
+    link.href = '/Shah_Resume_1998.pdf';
+    link.download = 'Shah_Resume_1998.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
