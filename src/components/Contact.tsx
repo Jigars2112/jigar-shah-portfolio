@@ -5,7 +5,7 @@ import { Mail, Github, Linkedin, Twitter, Download } from "lucide-react";
 const Contact = () => {
   const socialLinks = [
     { icon: Github, label: "GitHub", href: "https://github.com/Jigars2112" },
-    { icon: Linkedin, label: "LinkedIn", href: "www.linkedin.com/in/jigar-shah-full-stack-developer" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/jigar-shah-full-stack-developer/" },
     // { icon: Twitter, label: "Twitter", href: "#" },
   ];
 
