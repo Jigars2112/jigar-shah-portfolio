@@ -11,8 +11,8 @@ const Contact = () => {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/Shah_Resume_1998.pdf";
-    link.download = "Shah_Resume_1998.pdf";
+    link.href = "/Shah_Resume21.pdf";
+    link.download = "Shah_Resume21.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
