@@ -10,9 +10,9 @@ const Contact = () => {
   ];
 
   const handleDownloadResume = () => {
-    const link = document.createElement('a');
-    link.href = '/Shah_Resume_1998.pdf';
-    link.download = 'Shah_Resume_1998.pdf';
+    const link = document.createElement("a");
+    link.href = "/Shah_Resume_1998.pdf";
+    link.download = "Shah_Resume_1998.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -32,8 +32,8 @@ const Contact = () => {
           <div className="flex flex-col items-center gap-6">
             <div className="flex items-center gap-3 text-lg">
               <Mail className="w-6 h-6 text-primary" />
-              <a 
-                href="mailto:jigarshah2112.work@gmail.com" 
+              <a
+                href="mailto:jigarshah2112.work@gmail.com"
                 className="text-foreground hover:text-primary transition-colors"
               >
                 jigarshah2112.work@gmail.com
@@ -47,7 +47,7 @@ const Contact = () => {
                   size="lg"
                   variant="outline"
                   className="border-border hover:border-primary hover:bg-primary/10 transition-all hover-lift"
-                  onClick={() => window.open(social.href, '_blank')}
+                  onClick={() => window.open(social.href, "_blank")}
                 >
                   <social.icon className="w-5 h-5" />
                 </Button>
@@ -55,14 +55,14 @@ const Contact = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-6 w-full sm:w-auto">
-              <Button 
+              <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground glow flex-1 sm:flex-initial"
-                onClick={() => window.location.href = 'mailto:jigarshah2112.work@gmail.com'}
+                onClick={() => (window.location.href = "mailto:jigarshah2112.work@gmail.com")}
               >
                 Send Message
               </Button>
-              <Button 
+              <Button
                 size="lg"
                 variant="outline"
                 className="border-primary text-foreground hover:bg-primary/10 flex-1 sm:flex-initial group"
@@ -76,7 +76,7 @@ const Contact = () => {
         </Card>
 
         <p className="text-sm text-muted-foreground mt-12 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-          © 2024 Jigar Shah. Built with React & Tailwind CSS.
+          © 2025 Jigar Shah. Built with React & Tailwind CSS.
         </p>
       </div>
     </section>
